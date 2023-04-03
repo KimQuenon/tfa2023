@@ -1,0 +1,879 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+@font-face {
+    font-family: "Helvetica Neue Medium";
+    src: url("typo/helveticaneue/HelveticaNeue Medium.ttf");
+}
+@font-face {
+    font-family: "Helvetica Neue Light";
+    src: url("typo/helveticaneue/HelveticaNeue\ Light.ttf");
+}
+
+
+@font-face {
+    font-family: "Buster";
+    src: url("typo/buster/BUSTER.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.slide{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+body{
+    font-family: 'Helvetica Neue Medium';
+    color:white;
+    background-color: #010000;
+    line-height: 1.5;
+}
+
+/*------nav-----*/
+header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:100;
+}
+
+header nav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+header #logo{
+    width: 4%;
+    margin-left: 4%;
+}
+
+header #logo-mobile{
+    display: none;
+    margin-left: 4%;
+}
+
+header nav ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Helvetica Neue Medium', sans-serif;
+    font-weight: lighter;
+    transition: all 0.5s;
+}
+
+header nav ul li a #header{
+    background-color: white;
+    color: #010000;
+}
+
+#billeterie{
+    color:#EF7B00;
+    background-color: white;
+    padding:8px 25px;
+    border-radius: 5px;
+}
+
+#burger{
+    display: none;
+    width: 50px;
+    cursor: pointer;
+    position: fixed;
+    right: 4%;
+    top: 3%;
+    z-index: 200;
+}
+
+#burger .bar{
+    width: 80%;
+    height: 3px;
+    margin: 8px 0;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+#burger.open-burger .bar:nth-child(1){
+    background-color: white;
+    transform: translate(0px,11px) rotate(45deg)
+}
+
+#burger.open-burger .bar:nth-child(2){
+    opacity: 0;
+}
+
+#burger.open-burger .bar:nth-child(3){
+    background-color: white;
+    transform: translate(0px,-11px) rotate(-45deg)
+}
+
+#menuMobile{
+    width: 100%;
+    height: 100vh;
+    background-color: #010000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: -100%;
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.open-menu{
+    left: 0!important; /* id vs class */
+}
+
+#menuMobile nav ul{
+    list-style: none;
+}
+
+#menuMobile nav ul li{
+    margin: 30px 0;
+    text-align: center;
+}
+
+#menuMobile nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 45px;
+}
+
+/*--------fin de nav---------*/
+
+/**-------home-------*/
+
+#home{
+    background-image: url(images/bg_home.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#home_all{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#home_text{
+    width:50%;
+    /*background-color:blue;*/
+}
+
+#home_text h1{
+    font-family: "Buster";
+    text-align: center;
+    color:#EF7B00;
+    font-size: 120px;
+}
+
+#home_text #title2 p{
+    font-family: "Helvetica Neue Medium";
+    text-align: center;
+    color:#EF7B00;
+}
+
+#home_text_desc{
+    color:white;
+    padding:25px;
+}
+
+.btn{
+    display: block;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    background-color: #EF7B00;
+    color: white;
+    text-decoration: none;
+    margin: 15px 0 15px auto;
+    transition: all 0.3s;
+    border-radius: 10px;
+    font-family: "Helvetica Neue Medium";
+}
+
+.btn:hover{
+    background-color:white;
+    color: #EF7B00;
+}
+
+.container #infos{
+    padding:10px;
+}
+.infos_items{
+    width: 90%;
+    margin: 15px auto; 
+    display: flex;
+    justify-content: space-between;
+}
+
+hr{
+    color: #EF7B00;
+}
+
+
+#home_social_media{
+    width:5%;
+}
+
+#home_social_media .container{
+    border-left: 1px solid white;
+    display: inline-block;
+    height: 350px;
+    padding-left:30px;
+}
+
+.sm{
+    padding-top: 50px;;
+}
+
+/*--------fin de home----------*/
+
+
+/*--------line-up---------*/
+
+#lineup{
+    background-image: url(images/line_up.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: end;
+
+}
+
+#chrono{
+    height:20vh;
+    background-color: gray;
+    display:flex;
+}
+
+#chrono_all{
+    width:80%;
+    background-color: #EF7B00;
+    display:flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.chrono_number{
+    width:25%;
+    text-align: center;
+    
+}
+
+#line_up_all{
+    width:100%;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#line_up_text{
+    width: 50%;
+    font-family: "Helvetica Neue Light";  
+}
+
+h2{
+    font-family: "Helvetica Neue Medium";
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+#pres_text, .pres{
+    margin-bottom: 50px;
+
+}
+
+.jour{
+    font-family: "Helvetica Neue Medium";
+    margin-bottom: 5px;
+}
+
+.artiste{
+    margin-top: 5px;
+}
+
+/*--------fin de line-up----------*/
+
+/*---------galerie---------*/
+
+#galerie_all{
+    width:90%;
+    height:35vh;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#galerie_items1{
+    background-image: url(images/joanna.jpg);
+    background-position: center center;
+    background-size:cover;
+    align-items:center;
+}
+
+#galerie_items2{
+    background-image: url(images/jade.jpg);
+    background-position: center center;
+    background-size: cover;
+    align-items:center;
+}
+#galerie_items3{
+    background-image: url(images/chilla.jpg);
+    background-position: center center;
+    background-size: cover;
+    align-items:center;
+}
+#galerie_items4{
+    background-image: url(images/lous.jpg);
+    background-position: center center;
+    background-size: cover;
+    align-items:center;
+}
+
+
+/*--------ticket---------*/
+
+#ticket_all{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 70vh;
+    margin-top: 50px;
+}
+
+#ticket_left{
+    width:45%;
+    
+}
+
+#ticket_left .container p{
+    font-family:"Helvetica Neue Light";
+    margin-bottom:50px;
+    flex-wrap: wrap;
+}
+
+.btn2{
+    display: block;
+    width:650px;
+    height:25px;
+    margin:0 auto;
+    margin-bottom: 35px;
+    padding: 10px;
+    background-color: #010000;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    line-height: 25px;
+}
+
+.btn2:hover{
+    background-color: #2e2e2e;
+}
+
+#ticket_right{
+    width:55%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ticket_right_left, .ticket_right_right{
+    width:35%;
+    min-height:50vh;
+    outline:1px solid white;
+    padding:20px;
+    flex-wrap: wrap;
+}
+
+.ticket_right_right{
+    background-image: url(images/inclusive.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.prix{
+    align-items: end;
+}
+
+.prix hr{
+    color:white;
+}
+
+.prix h2{
+    text-align: end;
+    font-size: 45px;
+}
+
+/*-------fin prix------*/
+
+
+/*--------carrousel de noms----------*/
+
+#name{
+    height:20vh;
+    background-color: #EF7B00;
+}
+
+
+/*-------début contact------*/
+
+#contact_all{
+    min-height: 80vh;
+    background-image: url(images/bg_contact.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#contact_container{
+    width:80%;
+    min-height:70vh;
+    margin: 10vh auto;
+    background-image: url(images/bg_contact_container.jpg);
+    background-position: center center;
+    background-size: cover;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#contact_text{
+    width:50%;
+}
+
+#contact h2{
+    text-align: end;
+}
+
+.form-group{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.form-group label{
+    display: block;
+}
+
+.form-group input, .form-group textarea{
+    width: 100%;
+    font-size: 1.2em;
+    background-color: #010000;
+    font-family: "Helvetica Neue Light";
+    font-size: 18px;
+    padding:3px;
+    padding-left: 5px;
+    color:white;
+    border:none;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+
+}
+
+.form-group textarea{
+    resize: none;
+    height: 300px;
+}
+
+.form-group input[type=submit]
+{
+    width: 250px;
+    padding: 15px 50px;
+    background-color: #EF7B00;
+    color: white;
+    margin: 15px 0 15px auto;
+    transition: all 0.3s;
+    border-radius: 7px;
+    font-weight: 400;
+    transition:all 3 sec;
+    border:none;
+    font-family: "Helvetica Neue Medium";
+    
+}
+
+.form-group input[type=submit]:hover
+{
+    background-color: white;
+    color: #EF7B00;
+}
+
+/****** validation de formulaire ******/
+
+.is-invalid{
+    border-color: red;
+}
+
+.is-invalid:focus{
+    border: none;
+    outline:none;
+    outline: solid red 1px;
+}
+
+.invalid-feedback{
+    color: red;
+    display: none;
+}
+
+
+.is-invalid + .invalid-feedback{
+    display: block;
+}
+
+
+/** pour PHP (GET error et GET add = success) **/
+.error{
+    width: 100%;
+    text-align: center;
+    background-color: red;
+    padding: 20px 0;
+}
+
+.success{
+    width: 100%;
+    text-align: center;
+    background-color: green;
+    padding: 20px 0;  
+}
+
+/*-----------footer-----------*/
+
+footer{
+    background-color: #010000;
+    color:white;
+    text-align: center;
+    padding-top: 10px;
+    min-height: 50px;
+    font-family: "Helvetica Neue Light";
+}
+
+footer .footer_container{
+    width: 90%;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#footer1{
+    padding: 25px 0;
+    width: 100%;
+    min-height: 160px;
+    background-color: #010000;
+}
+
+#footer1 img{
+    width: 50px;
+}
+
+#footer1 .footer_container h1{
+    font-size: 20px;
+    padding-bottom: 5px;;
+}
+
+#about a, #mentions a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer2{
+    width:100%;
+    padding: 10px 0;
+    background-color: #151414;
+}
+
+#footer2 a{
+    color:white;
+}
+
+#footer1 .footer_container, #footer2 .footer_container{
+    justify-content: space-between;
+}
+
+#footertext{
+    width: 30%;
+}
+
+#footer2 nav a{
+    text-decoration: none;
+}
+
+.orange{
+    color:#EF7B00;
+}
+
+
+
+/*------------commodités------------*/
+.pages{
+    position:static!important;
+}
+#commodites{
+    background-image: url(images/bg_commodites.jpg);
+    background-position:center center;
+    background-size:cover;
+    min-height:100vh;
+}
+
+.commodites_all{
+    width:80%;
+    display:flex;
+    flex-wrap:wrap;
+    margin: 0 auto;
+    padding-top:30px;
+    padding-bottom:50px;
+    font-family: "Helvetica Neue Light";
+}
+
+.commodites_all h1{
+    font-family: "Helvetica Neue Medium";
+    font-size: 35px;
+}
+
+.commodites_all h2{
+    font-size: 25px;
+}
+
+
+
+/*-------réglement-------*/
+    #réglement_all{
+        width:80%;
+    }
+
+
+.btn3{
+    display: block;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    background-color: none;
+    outline: white solid 1px;
+    color:white;
+    text-decoration: none;
+    margin: 15px 0 15px auto;
+    transition: all 0.3s;
+    border-radius: 10px;
+    font-family: "Helvetica Neue Medium";
+}
+
+.btn3:hover{
+    background-color:#EF7B00;
+    color: white;
+}
+
+.commodites_title{
+    width:100%;
+}
+
+.commodites_left, .commodites_right{
+    width:50%;
+    min-height:40vh;
+}
+
+#cl_1{
+    background-image: url(images/nourriture.jpg);
+    background-position: center center;
+    background-size:cover;
+}
+#cr_2{
+    background-image: url(images/réglement.jpg);
+    background-position: center center;
+    background-size:cover;
+}
+#cl_3{
+    background-image: url(images/tente.jpg);
+    background-position: center center;
+    background-size:cover;
+}
+
+/*------media queries-------*/
+
+
+@media all and (max-width: 1200px){
+    
+}
+
+@media all and (max-width: 1024px){
+
+    .btn2{
+        width:450px;
+    }
+}
+
+
+
+@media all and (max-width: 900px){
+    #home_text h1{
+        font-size: 80px;
+    
+}
+
+    #home_text_desc{
+        text-align: center;
+    }
+
+
+}
+
+@media all and (max-width: 768px){
+    header #logo{
+        display: none;
+    }
+    header #logo-mobile{ 
+        display: block;
+        width: 50px;
+    }
+    header nav{
+        display: none;
+    }
+
+    #burger{
+        display: block;
+    }
+
+    #home_text, #line_up_text{
+        width:100%;
+    }
+
+    #home_social_media{
+        display:none;
+    }
+
+    #pres_text, h2{
+        text-align: center;
+    }
+
+    #galerie{
+        display: none;
+    }
+
+   #ticket_left, #ticket_right, .ticket_right_left, .ticket_right_right{
+        width:100%;
+    }
+
+    .btn2{
+        width:250px;
+    }
+
+    #contact_container{
+        background-image: none;
+        background-color: #010000;
+    }
+
+    #contact_text{
+        width:100%;
+    }
+
+    #footer_container{
+        padding-top:0;
+    }
+
+    #footertext, #mentions, #about{
+        width:100%;
+        padding-bottom: 20px;
+    }
+
+    .form-group input[type=submit]
+    {
+        width: 200px;
+        
+    }
+
+
+    /*--------commodités--------*/
+
+    #commodites{
+        background-image: none;
+        background-color: #010000;
+    }
+    .commodites_all{
+        padding-top:10px;
+        padding-bottom:30px;
+    }
+    .commodites_left, .commodites_right{
+        width:100%;
+        padding:10px;
+    }
+    .btn3{
+        display: none;
+    }
+
+
+    #cl_1{
+        order:2;
+    }
+
+    #cr_2{
+        order:4;
+    }
+
+    #cl_3{
+        order:6;
+    }
+
+    #cr_1 .container, #cl_2 .container, #cr_3 .container{
+        width:100%;
+    }
+
+
+}
+
+@media all and (max-width: 600px){
+    #menuMobile nav ul li{
+        margin: 60px 0;
+    }
+    
+    #menuMobile nav ul li a{
+        font-size: 20px;
+    }
+
+    #menuMobile nav ul li a:hover{
+        color: #EF7B00;
+        transition: all 1s;
+    }
+
+}
+
+@media all and (max-width: 480px){
+
+}
+
+@media all and (max-width: 320px){
+
+}
+
