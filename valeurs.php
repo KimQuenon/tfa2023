@@ -76,11 +76,13 @@
                 <div id="mag_text">
                     <div class="container">
                         <h2>MAGAZINE</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro, voluptas doloribus consequuntur ipsa assumenda error saepe qui rem, eos accusantium ullam neque! Cumque veniam harum possimus saepe ea, in accusantium. Eius, non quibusdam laboriosam nam, blanditiis totam mollitia consequatur repellat ipsum quo porro est vitae quas modi? Dolores nisi expedita rem, atque asperiores eaque? Explicabo laboriosam, quo facere assumenda adipisci repellat quisquam nemo laudantium inventore. Modi, harum odit. Voluptatem explicabo harum quasi numquam error similique, quidem voluptatum eaque provident nisi, inventore natus, nostrum alias soluta quis? Illo, magnam? Est et incidunt earum consectetur iusto vitae consequatur vel, perferendis id optio aut velit! Eveniet, quasi nihil laboriosam saepe sit at cupiditate sint!</p>
+                        <p>Notre première édition s'accompagne du lancement de notre ligne éditoriale visant à promouvoir nos jeunes artistes. Vendu en complément de notre partenaire Trax Magazine, notre revue contribue à la rencontre entre ces nombreuses interprètes et leur (futur) public.<br><br>Découvrez dès à présent le premier numéro en vente dans votre kiosque habituel ! </p>
                         <a href="index.php#home" class="btn">Retour au site</a>
                     </div>
                 </div>
-                <div id="mag_img"></div>
+                <div id="mag_img">
+                    <div id="cover"></div>
+                </div>
             </div>
             
     </div>

@@ -66,7 +66,7 @@
                 <div class="commodites_left" id="cl_2">
                     <div class="container">
                         <h2>SPIRITUEUX & RÈGLEMENTATION</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iusto numquam eos error id aperiam consequatur, labore magnam nulla possimus blanditiis quae explicabo cumque sequi debitis voluptates soluta ipsa mollitia? Aut adipisci ipsum veniam voluptatibus culpa quia dolore odit iste.</p><br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laborum aliquid quia cum cupiditate consectetur laudantium ut et ullam sit.</p>
+                        <p>Bières et spiritieux sont disponibles à la vente grâce à notre sponsor Pop It. Nos foodtrucks spécialisés dans la brassrie sauront satisfaire vos papilles grâce aux saveurs propres à notre pays. Découvrez de nouveaux horizons gustatifs, dans la modération dont il est usage !<br><br>Afin d'éviter toute forme d'excès et de permettre à l'entièreté des festivaliers de s'épanouir dans un cadre sécurisé, veuillez prendre connaissance du règlement ci-dessous.</p>
                         <a href="reglement.php" class=btn>RÈGLEMENT ></a>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                 <div class="commodites_right" id="cr_3">
                     <div class="container">
                         <h2>LOCATION DE TENTES</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iusto numquam eos error id aperiam consequatur, labore magnam nulla possimus blanditiis quae explicabo cumque sequi debitis voluptates soluta ipsa mollitia? Aut adipisci ipsum veniam voluptatibus culpa quia dolore odit iste.</p><br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laborum aliquid quia cum cupiditate consectetur laudantium ut et ullam sit.</p>
+                        <p>Rien de telle qu'une nuit à la belle étoile sur fond musical ! Arena B dispose de vastes prairies ouvertes au camping. Et afin de parfaire au maximum votre expérience, le festival met à votre disposition des tentes pour la modique somme de 9€/pièce.<br><br>Réservez votre emplacement et votre logement à l'adresse suivante :</p>
                         <a href="https://www.les-toiles.fr/contact/" class=btn>LOUER UNE TENTE ></a>
                     </div>
                 </div>

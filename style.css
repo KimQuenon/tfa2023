@@ -195,7 +195,7 @@ header nav ul li a #header{
     font-family: "Buster";
     text-align: center;
     color:#EF7B00;
-    font-size: 120px;
+    font-size: 140px;
 }
 
 #home_text #title2 p{
@@ -654,10 +654,19 @@ h2{
 }
 
 #mag_img{
-    width:30%;
+    width:50%;
     height:50vh;
     margin: 0 auto;
-    background-color: #EF7B00;
+}
+
+#cover{
+    width:80%;
+    height:50vh;
+    margin: 0 auto;
+    background-image: url(images/mag.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /*-----------footer-----------*/
@@ -888,7 +897,7 @@ footer{
 }
 
 #pop_it{
-    background-image: url(images/Beats_Electronics_logo.svg.png);
+    background-image: url(images/pop_it.png);
     background-position: center center;
     background-size:contain;
     background-repeat: no-repeat;
