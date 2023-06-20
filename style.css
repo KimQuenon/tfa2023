@@ -1,7 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Questrial&display=swap');
 
 @font-face {
     font-family: "Helvetica Neue Medium";
@@ -11,7 +8,6 @@
     font-family: "Helvetica Neue Light";
     src: url("typo/helveticaneue/HelveticaNeue\ Light.ttf");
 }
-
 
 @font-face {
     font-family: "Buster";
@@ -34,7 +30,7 @@ body{
     font-family: 'Helvetica Neue Medium';
     color:white;
     background-color: #010000;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 /*------nav-----*/
@@ -49,6 +45,7 @@ header{
     top: 0;
     left: 0;
     z-index:100;
+    backdrop-filter: blur(4px);
 }
 
 header nav{
@@ -95,19 +92,19 @@ header nav ul li a #header{
 }
 
 #billeterie{
-    color:#EF7B00;
     background-color: white;
     padding:8px 25px;
     border-radius: 5px;
+    color:#EF7B00!important;
 }
 
 #burger{
     display: none;
     width: 50px;
     cursor: pointer;
-    position: fixed;
+    /*position: fixed;
     right: 4%;
-    top: 3%;
+    top: 3%;*/
     z-index: 200;
 }
 
@@ -167,10 +164,11 @@ header nav ul li a #header{
 
 /*--------fin de nav---------*/
 
+
 /**-------home-------*/
 
 #home{
-    background-image: url(images/bg_home.jpg);
+    background-image: url(images/bg_home.webp);
     background-position: center center;
     background-size: cover;
 }
@@ -217,7 +215,7 @@ header nav ul li a #header{
     padding: 15px;
     text-align: center;
     background-color: #EF7B00;
-    color: white;
+    color:white;
     text-decoration: none;
     margin: 15px 0 15px auto;
     transition: all 0.3s;
@@ -225,8 +223,17 @@ header nav ul li a #header{
     font-family: "Helvetica Neue Medium";
 }
 
+.btn a{
+    text-decoration: none;
+    color:white;
+}
+
 .btn:hover{
     background-color:white;
+    color:#EF7B00;
+}
+
+.btn:hover a{
     color: #EF7B00;
 }
 
@@ -254,10 +261,15 @@ hr{
     display: inline-block;
     height: 350px;
     padding-left:30px;
+    box-sizing: border-box;
 }
 
 .sm{
     padding-top: 50px;;
+}
+
+.sm a{
+    color:white;
 }
 
 /*--------fin de home----------*/
@@ -266,22 +278,28 @@ hr{
 /*--------line-up---------*/
 
 #lineup{
-    background-image: url(images/line_up.jpg);
+    background-image: url(images/bg_line_up.jpg);
     background-position: center center;
     background-size: cover;
     text-align: end;
 
 }
 
-#chrono{
-    height:20vh;
-    background-color: gray;
+.chrono{
+    height:5vh;
     display:flex;
 }
 
-#chrono_all{
-    width:80%;
-    background-color: #EF7B00;
+#chrono_title{
+    width:50%;
+    margin:0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+    color:#EF7B00;
+}
+
+#chrono_all, #chrono_text{
+    width:50%;
     display:flex;
     margin: 0 auto;
     align-items: center;
@@ -290,10 +308,18 @@ hr{
 .chrono_number{
     width:25%;
     text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size:55px;
+}
+
+.chrono_text_time{
+    width:25%;
+    text-align: center;
     
 }
 
-#line_up_all{
+
+#line_up_all, #valeurs_all, #mag_all{
     width:100%;
     display:flex;
     justify-content: end;
@@ -301,7 +327,7 @@ hr{
     min-height: 100vh;
 }
 
-#line_up_text{
+#line_up_text, #valeurs_text, #mag_text{
     width: 50%;
     font-family: "Helvetica Neue Light";  
 }
@@ -312,7 +338,7 @@ h2{
     font-size: 35px;
 }
 
-#pres_text, .pres{
+#pres_text, .pres, #pres_valeurs{
     margin-bottom: 50px;
 
 }
@@ -402,6 +428,7 @@ h2{
     text-decoration: none;
     transition: all 0.3s;
     line-height: 25px;
+    font-family: "Helvetica Neue Medium";
 }
 
 .btn2:hover{
@@ -420,7 +447,21 @@ h2{
     min-height:50vh;
     outline:1px solid white;
     padding:20px;
+    display: flex;
+    align-items: start;
     flex-wrap: wrap;
+}
+
+.ticket_right_left h2{
+    width: 100%;
+}
+
+.ticket_right_left .ticket_pres{
+    width: 100%;
+}
+
+.ticket_right_left .prix, .ticket_right_right .prix{
+    width: 100%;
 }
 
 .ticket_right_right{
@@ -430,7 +471,7 @@ h2{
 }
 
 .prix{
-    align-items: end;
+    align-self: end;
 }
 
 .prix hr{
@@ -448,8 +489,42 @@ h2{
 /*--------carrousel de noms----------*/
 
 #name{
-    height:20vh;
-    background-color: #EF7B00;
+    height:10vh;
+}
+
+.marquee-rtl {
+    overflow: hidden; /* important */
+    width:100%;
+    /*max-width: 30em; /* A ADAPTER */
+}
+
+.marquee-rtl > div {
+    display: inline-block; /* important */
+    white-space: nowrap; /* important */
+    animation: defilement-rtl 200s infinite linear; /* défilement */
+    cursor: pointer;
+    padding: 25px 2em 10px 100%;
+}
+
+@keyframes defilement-rtl {
+    0% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+    }
+    100% {
+      -webkit-transform: translate(-100%);
+      transform: translate(-100%);
+    }
+  }
+
+.marquee-rtl {
+    margin: 2em auto;
+}.marquee-rtl > div {
+    font-size: 35px;
+    color:#010000;
+    -webkit-text-stroke-color: #EF7B00;
+    -webkit-text-stroke-width: 2px; 
+
 }
 
 
@@ -571,67 +646,88 @@ h2{
     padding: 20px 0;  
 }
 
+
+/*--------magazine----------*/
+#mag_all{
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+#mag_img{
+    width:30%;
+    height:50vh;
+    margin: 0 auto;
+    background-color: #EF7B00;
+}
+
 /*-----------footer-----------*/
 
 footer{
-    background-color: #010000;
+    background-color: black;
     color:white;
-    text-align: center;
     padding-top: 10px;
+    font-size: 14px;
     min-height: 50px;
-    font-family: "Helvetica Neue Light";
 }
-
-footer .footer_container{
-    width: 90%;
+.footer_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
     margin: 0 auto;
-    display:flex;
-    flex-wrap:wrap;
 }
-
 #footer1{
-    padding: 25px 0;
+    padding: 20px 0;
     width: 100%;
-    min-height: 160px;
-    background-color: #010000;
 }
-
 #footer1 img{
-    width: 50px;
+        height: 60px;
+        margin-right: 4%;
+}
+#footer1 #footertext{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    line-height: 18px;
 }
 
-#footer1 .footer_container h1{
+#about p,#mentions_legales p{
+       cursor: pointer;
+       margin-top: 5px;
+   }
+
+ #about h4,#mentions_legales h4{
     font-size: 20px;
-    padding-bottom: 5px;;
-}
+    font-weight: normal;
+    font-family: sans-serif;
 
-#about a, #mentions a{
+    
+}
+.reseaux{
+    display: flex;
+    align-items: center;
+}
+.reseaux a{
     text-decoration: none;
     color: white;
+    font-size: 24px;
+    margin: 0 15px;
 }
 
 #footer2{
-    width:100%;
-    padding: 10px 0;
-    background-color: #151414;
+    padding: 15px 0;
+    background-color: #1f1e1e;
+    
 }
-
-#footer2 a{
-    color:white;
-}
-
-#footer1 .footer_container, #footer2 .footer_container{
-    justify-content: space-between;
-}
-
-#footertext{
-    width: 30%;
-}
-
-#footer2 nav a{
+#footer1 a, #footer2 a{
     text-decoration: none;
-}
+    color: white;
+    font-family: "Helvetica Neue Light";
 
+}
+#footer2 span{
+    color: #EF7B00; 
+}
 .orange{
     color:#EF7B00;
 }
@@ -668,14 +764,6 @@ footer .footer_container{
     font-size: 25px;
 }
 
-
-
-/*-------réglement-------*/
-    #réglement_all{
-        width:80%;
-    }
-
-
 .btn3{
     display: block;
     width: 150px;
@@ -696,9 +784,6 @@ footer .footer_container{
     color: white;
 }
 
-.commodites_title{
-    width:100%;
-}
 
 .commodites_left, .commodites_right{
     width:50%;
@@ -721,6 +806,149 @@ footer .footer_container{
     background-size:cover;
 }
 
+/*-------réglement-------*/
+#reglement, #mentions, #plan{
+    background-image: url(images/info_bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#reglement_all, #commodites_all, #mentions_all, #plan_all{
+    width:80%;
+    margin:0 auto;
+    padding-bottom: 50px;
+}
+
+#reglement_title, #commodites_title, #mentions_title, #plan_title{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom:30px;
+    margin-top: 90px;
+}
+
+#reglement_text, #mentions_text{
+    font-family: "Helvetica Neue Light";
+}
+
+#reglement_text ul li ul, #mentions_text ul li{
+    margin-left:55px;
+}
+
+#mentions_text h3{
+    font-family: "Helvetica Neue Medium";
+    margin-top: 20px;
+}
+
+#valeurs_text .container h2{
+    margin-top: 70px;;
+}
+
+
+
+/*------valeurs-------*/
+
+#valeurs_all{
+    background-image: url(images/bg_valeurs.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#pres_valeurs p{
+    padding-bottom: 40px;
+}
+
+#pres_valeurs .btn2{
+    margin-left:0;
+}
+#sponsors{
+    min-height:30vh;
+    width:80%;
+    margin:0 auto;
+}
+
+#sponsors h1{
+    text-align: center;
+}
+
+#sponsors_all{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+
+.spons{
+    width:30%;
+    background-color: #010000;
+    min-height:30vh;
+
+}
+
+#pop_it{
+    background-image: url(images/Beats_Electronics_logo.svg.png);
+    background-position: center center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+#beats{
+    background-image: url(images/Beats_Electronics_logo.svg.png);
+    background-position: center center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+#air_jordan{
+    background-image: url(images/air_jordan.png);
+    background-position: center center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+
+#magazine{
+    min-height:70vh;
+    background-image: url(images/mag.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+
+/*--------plan---------*/
+#plan_img{
+    background-image: url(images/plan.png);
+    background-position: center center;
+    background-size: cover;
+    width:100%;
+    height:90vh;
+    margin: 0 auto;
+}
+
+/*-----scroll-------*/
+.totop{
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    background-color: #EF7B00;
+}
+
+svg{
+    text-align: center;
+    z-index: 100;
+    fill: white;
+    height: 30px;
+       
+}
+
+
+
 /*------media queries-------*/
 
 
@@ -740,12 +968,23 @@ footer .footer_container{
 @media all and (max-width: 900px){
     #home_text h1{
         font-size: 80px;
-    
-}
+        padding-top: 70px;   
+    }
 
     #home_text_desc{
         text-align: center;
     }
+    #footer1 #footertext{
+        width: 100%;
+        margin: 20px;
+
+    }
+    #footer2{
+  
+        display: flex;
+        order: -4;
+        
+      }
 
 
 }
@@ -766,7 +1005,7 @@ footer .footer_container{
         display: block;
     }
 
-    #home_text, #line_up_text{
+    #home_text, #line_up_text, #valeurs_text{
         width:100%;
     }
 
@@ -778,8 +1017,8 @@ footer .footer_container{
         text-align: center;
     }
 
-    #galerie{
-        display: none;
+    #chrono_title, .chrono, #galerie{
+        display:none;
     }
 
    #ticket_left, #ticket_right, .ticket_right_left, .ticket_right_right{
@@ -799,13 +1038,12 @@ footer .footer_container{
         width:100%;
     }
 
-    #footer_container{
-        padding-top:0;
-    }
-
-    #footertext, #mentions, #about{
-        width:100%;
-        padding-bottom: 20px;
+    .reseaux{
+        width: 100%;
+        justify-content: space-between;
+        order: -5;
+        margin: 20px;
+  
     }
 
     .form-group input[type=submit]
@@ -850,6 +1088,29 @@ footer .footer_container{
         width:100%;
     }
 
+    /*------sponsors------*/
+    .spons{
+        width:100%;
+    }
+
+    #sponsors_all{
+        gap:30px;
+    }
+
+    #plan_img{
+        height: 20vh;
+    }
+
+    #plan{
+        min-height:20vh;
+    }
+
+    #mag_text, #mag_img{
+        width:100%;
+    }
+
+
+
 
 }
 
@@ -860,11 +1121,6 @@ footer .footer_container{
     
     #menuMobile nav ul li a{
         font-size: 20px;
-    }
-
-    #menuMobile nav ul li a:hover{
-        color: #EF7B00;
-        transition: all 1s;
     }
 
 }

@@ -12,6 +12,17 @@
     <title>ARENA B Festival</title>
 </head>
 <body>
+    <div id="menuMobile">
+        <nav>
+            <ul>
+                <li><a href="index.php#home">Accueil</a></li>
+                <li><a href="index.php#lineup">Line-Up</a></li>
+                <li><a href="index.php#ticket">Tickets</a></li>
+                <li><a href="index.php#contact">Contact</a></li>
+                <li><a href="#https://www.ticketmaster.be/event/j-i-d-billets/53217?language=fr-be" id="billeterie">Billeterie</a></li>
+            </ul>
+        </nav>
+    </div>
     <header>
         <img src="images/logo_white.png" alt="Logo Arena B" id="logo">
         <img src="images/logo_white.png" alt="Logo Arena B" id="logo-mobile">
@@ -21,7 +32,7 @@
                 <li><a href="index.php#lineup">Line-Up</a></li>
                 <li><a href="index.php#ticket">Tickets</a></li>
                 <li><a href="index.php#contact">Contact</a></li>
-                <li><a href="#billeterie" id="billeterie">Billeterie</a></li>
+                <li><a href="https://www.ticketmaster.be/event/j-i-d-billets/53217?language=fr-be" id="billeterie">Billeterie</a></li>
             </ul>
         </nav>
     
@@ -30,17 +41,7 @@
         <div class="bar"></div>
         <div class="bar"></div>
     </div>
-    <div id="menuMobile">
-        <nav>
-            <ul>
-                <li><a href="index.php#home">Accueil</a></li>
-                <li><a href="index.php#lineup">Line-Up</a></li>
-                <li><a href="index.php#ticket">Tickets</a></li>
-                <li><a href="index.php#contact">Contact</a></li>
-                <li><a href="#billeterie" id="billeterie">Billeterie</a></li>
-            </ul>
-        </nav>
-    </div>
+ 
     </header>
 
     <div class="slide" id="home">
@@ -49,8 +50,8 @@
                 <div class="container">
                     <h1>ARENA B</h1>
                     <div id="title2"><p>PREMIER FESTIVAL 100% R'N'B BELGE</p></div>
-                    <div id="home_text_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores modi eos perspiciatis doloribus voluptatum vel cupiditate, dolorem impedit sed! Nulla eum facilis id quam iste atque minima explicabo quod labore.</div>
-                    <div class="btn">RÉSERVEZ VOTRE TICKET ></div>
+                    <div id="home_text_desc">Découvrez les nouveaux visages du R'n'B féminin au travers de trois jours de pure poésie ! Belgique et France sont mises à l'honneur, mais également une multitude d'artistes aux personnalités affirmées et aux univers variés. </div>
+                    <div class="btn"><a href="https://www.ticketmaster.be/event/j-i-d-billets/53217?language=fr-be">RÉSERVEZ VOTRE TICKET ></a></div>
                     <div id="infos">
                        <div class="infos_items">
                         <div><p>1 plaine</p></div>
@@ -71,28 +72,40 @@
             </div>
             <div id="home_social_media">
                 <div class="container">
-                    <div class="sm"><i class="fa-brands fa-facebook"></i></div>
-                    <div class="sm"><i class="fa-brands fa-twitter"></i></div>
-                    <div class="sm"><i class="fa-brands fa-instagram"></i></div>
-                    <div class="sm"><i class="fa-brands fa-youtube"></i></div>
+                    <div class="sm"><a href="https://www.facebook.com/profile.php?id=100093659651137"><i class="fa-brands fa-facebook"></i></a></div>
+                    <div class="sm"><a href="https://twitter.com/ArenaB_festival"><i class="fa-brands fa-twitter"></i></a></div>
+                    <div class="sm"><a href="https://www.instagram.com/arenab_festival/"><i class="fa-brands fa-instagram"></i></a></div>
+                    <div class="sm"><a href="https://www.youtube.com/channel/UC2znInYsZNWOBv5E1s2rEGQ"><i class="fa-brands fa-youtube"></i></a></div>
                 </div>
             </div>
         </div>
     </div>    
     <div class="slide" id="lineup">
-        <div id="chrono">
+        <div id="chrono_title">
+            <p>LANCEMENT DE LA PREMIÈRE ÉDITION DANS</p>
+        </div>
+        <div class="chrono">
             <div id="chrono_all">
-                <div class="chrono_number">1</div>
-                <div class="chrono_number">2</div>
-                <div class="chrono_number">3</div>
-                <div class="chrono_number">4</div>
+                <div class="chrono_number" id="jour"></div>
+                <div class="chrono_number" id="heure"></div>
+                <div class="chrono_number" id="min"></div>
+                <div class="chrono_number" id="sec"></div>
+            </div>
+        </div>
+        <div class="chrono">
+
+            <div id="chrono_text">
+                <div class="chrono_text_time">JOURS</div>
+                <div class="chrono_text_time">HEURES</div>
+                <div class="chrono_text_time">MINUTES</div>
+                <div class="chrono_text_time">SECONDES</div>
             </div>
         </div>
         <div id="line_up_all">
             <div id="line_up_text">
                 <div class="container">
                     <h2>LINE-UP</h2>
-                    <div id="pres_text">Arena B est un festival de R’n’B rassemblant une multitude d’artistes féminines issues des quatre coins de Belgique et de France. Il tire son nom de la prononciation originelle du genre musical défendu combiné à un jeu de mots avec le terme de l’arène – ici utilisé ironiquement, à savoir que seuls les hommes étaient autrefois habilités à s’y produire. Une manière forte et engagée de dénoncer le combat que mènent ces anonymes à conquérir une industrie dominée par le sexe opposé.</div>
+                    <div id="pres_text"><b>Arena B</b> est un festival de <b>R’n’B</b> rassemblant une multitude d’<b>artistes féminines issues des quatre coins de Belgique et de France</b>. Il tire son nom de la prononciation originelle du genre musical défendu combiné à un jeu de mots avec le terme de l’<b>arène</b> – ici utilisé ironiquement, à savoir que seuls les hommes étaient autrefois habilités à s’y produire. Une manière forte et engagée de dénoncer le combat que mènent ces anonymes à conquérir une industrie dominée par le sexe opposé.</div>
                     <div class="pres">
                             <p class="jour">JOUR 1 - Globe en rythme</p>
                             <hr>
@@ -101,13 +114,13 @@
                     <div class="pres">
                             <p class="jour">JOUR 2 - Douce poésie</p>
                             <hr>
-                            <p class="artiste">12.00 Marie Plassard - 13.30 Siloh - 15.00 Leys - 16.30 Meyy - 18.00 Doh - 19.30 Kalika - 21.00  Oordaya - 22.30  Jäde - 0.00 Joanna
+                            <p class="artiste">12.00 <b>Marie Plassard</b> - 13.30 <b>Siloh</b> - 15.00 <b>Leys</b> - 16.30 <b>Meyy</b> - 18.00 <b>Doh</b> - 19.30 <b>Kalika</b> - 21.00  <b>Oordaya</b> - 22.30  <b>Jäde</b> - 0.00 <b>Joanna</b>
                             </p>
                         </div>
                         <div class="pres">
                             <p class="jour">JOUR 3 - Et demain ?</p>
                             <hr>
-                            <p class="artiste">12.00 Alicia - 13.30 Ocevne - 15.00 Nayra - 16.30 Yseult - 18.00 Mademoiselle Lou - 19.30 Zinée - 21.00  Tessae - 22.30  Sally - 0.00 Lous and The Yakuza
+                            <p class="artiste">12.00 <b>Alicia</b> - 13.30 <b>Ocevne</b> - 15.00 <b>Nayra</b> - 16.30 <b>Yseult</b> - 18.00 <b>Mademoiselle Lou</b> - 19.30 <b>Zinée</b> - 21.00  <b>Tessae</b> - 22.30  <b>Sally</b> - 0.00 <b>Lous and The Yakuza</b>
                             </p>
                         </div>
                 </div>
@@ -129,40 +142,49 @@
                     <div class="container">
                         <h2>TICKETS</h2>
                         <div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem dolorum, recusandae non voluptate accusamus temporibus repellendus natus eligendi vel vitae ea similique voluptatem omnis vero ab asperiores. Praesentium, totam molestias officiis autem repudiandae unde similique hic quasi asperiores, pariatur rem!<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quia optio, repudiandae molestiae blanditiis dignissimos reprehenderit commodi similique consectetur accusantium!</p>
+                            <p>Plongez dans l'univers d'Arena B avec notre billetterie en ligne dédiée aux festivals ! Vibrez au rythme des meilleurs artistes de R&B, découvrez des performances captivantes et créez des souvenirs inoubliables. Réservez dès maintenant votre place au festival R'n'B de vos rêves et préparez-vous à une expérience musicale époustouflante !</p>
                         </div>
-                        <div class="btn2">À propos du festival ></div>
-                        <div class="btn2">Plan de la plaine ></div>
+                        <a href="valeurs.php" class="btn2">À propos du festival ></a>
+                        <a href="plan.php" class="btn2">Plan de la plaine ></a>
                         <a href="commodites.php" class="btn2">Commodités ></a>
-                        <div class="btn">BILLETERIE ></div>
+                        <div class="btn"><a href="https://www.ticketmaster.be/event/j-i-d-billets/53217?language=fr-be">BILLETERIE ></a></div>
                     </div>
                 </div>
                 <div id="ticket_right">
                     <div class="ticket_right_left">
-                        <h2>CLASSIQUE</h2>
-                        <div class="ticket_pres">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem unde quibusdam nisi ipsum quae amet, eligendi eos est quasi voluptatem.</p>
+                        <div class="container-flex">
+                            <h2>CLASSIQUE</h2>
+                            <div class="ticket_pres">
+                                <p>Accès aux zones de camping et à la scène - tentes non fournies (9 €/pièce) et nourriture payante.</p>
+                            </div>
                         </div>
                         <div class="prix">
                             <hr>
-                            <h2>- 74,99</h2>
+                            <h2>74,99 &euro;</h2>
                         </div>
                     </div>
                     <div class="ticket_right_right">
-                        <h2>INCLUSIVE</h2>
-                        <div class="ticket_pres">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem unde quibusdam nisi ipsum quae amet, eligendi eos est quasi voluptatem.</p>
+
+                        <div class="container-flex">
+                            <h2>INCLUSIVE</h2>
+                            <div class="ticket_pres">
+                                <p>Accès aux zones de camping et à la scène - tentes fournies et nourriture gratuite.</p>
+                            </div>
                         </div>
                         <div class="prix">
                             <hr>
-                            <h2>- 149,99</h2>
+                            <h2>149,99 &euro;</h2>
                         </div>
                     </div>
                 </div>
         </div>
     </div>    
     <div class="slide" id="contact">
-        <div id="name"></div>
+        <div id="name">
+            <div class="marquee-rtl">
+                <div>CHILLA - LOUS AND THE YAKUZA - JOANNA - OORDAYA - ALOÏSE SAUVAGE - TESSAE - MERYL - DAVINHOR - LE JUIICE - VICKY R - LAETI - POUPIE - BIANCA COSTA - MARIE PLASSARD - SILOH - LEYS - MEYY - DOH - KALIKA - JÄDE - ALICIA - OCEVNE - NAYRA - YSEULT - MADEMOISELLE LOU - ZINÉE - CHILLA - LOUS AND THE YAKUZA - JOANNA - OORDAYA - ALOÏSE SAUVAGE - TESSAE - MERYL - DAVINHOR - LE JUIICE - VICKY R - LAETI - POUPIE - BIANCA COSTA - MARIE PLASSARD - SILOH - LEYS - MEYY - DOH - KALIKA - JÄDE - ALICIA - OCEVNE - NAYRA - YSEULT - MADEMOISELLE LOU - ZINÉE - CHILLA - LOUS AND THE YAKUZA - JOANNA - OORDAYA - ALOÏSE SAUVAGE - TESSAE - MERYL - DAVINHOR - LE JUIICE - VICKY R - LAETI - POUPIE - BIANCA COSTA - MARIE PLASSARD - SILOH - LEYS - MEYY - DOH - KALIKA - JÄDE - ALICIA - OCEVNE - NAYRA - YSEULT - MADEMOISELLE LOU - ZINÉE - CHILLA - LOUS AND THE YAKUZA - JOANNA - OORDAYA - ALOÏSE SAUVAGE - TESSAE - MERYL - DAVINHOR - LE JUIICE - VICKY R - LAETI - POUPIE - BIANCA COSTA - MARIE PLASSARD - SILOH - LEYS - MEYY - DOH - KALIKA - JÄDE - ALICIA - OCEVNE - NAYRA - YSEULT - MADEMOISELLE LOU - ZINÉE - CHILLA - LOUS AND THE YAKUZA - JOANNA - OORDAYA - ALOÏSE SAUVAGE - TESSAE - MERYL - DAVINHOR - LE JUIICE - VICKY R - LAETI - POUPIE - BIANCA COSTA - MARIE PLASSARD - SILOH - LEYS - MEYY - DOH - KALIKA - JÄDE - ALICIA - OCEVNE - NAYRA - YSEULT - MADEMOISELLE LOU - ZINÉE - CHILLA - LOUS AND THE YAKUZA - JOANNA - OORDAYA - ALOÏSE SAUVAGE - TESSAE - MERYL - DAVINHOR - LE JUIICE - VICKY R - LAETI - POUPIE - BIANCA COSTA - MARIE PLASSARD - SILOH - LEYS - MEYY - DOH - KALIKA - JÄDE - ALICIA - OCEVNE - NAYRA - YSEULT - MADEMOISELLE LOU - ZINÉE - CHILLA - LOUS AND THE YAKUZA - JOANNA - OORDAYA - ALOÏSE SAUVAGE - TESSAE - MERYL - DAVINHOR - LE JUIICE - VICKY R - LAETI - POUPIE - BIANCA COSTA - MARIE PLASSARD - SILOH - LEYS - MEYY - DOH - KALIKA - JÄDE - ALICIA - OCEVNE - NAYRA - YSEULT - MADEMOISELLE LOU - ZINÉE</div>
+            </div>
+        </div>
         <div id="contact_all">
             <div id="contact_container">
                 <div id="contact_text">
@@ -184,7 +206,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="email">E-mail: </label>
-                                <input type="email" name="email" id="email" placeholder="arenab@gmail.com">
+                                <input type="email" name="email" id="email" placeholder="arenab.festival@gmail.com">
                                 <div class="invalid-feedback">
                                     Veuillez remplir le champ adresse e-mail correctement
                                 </div>
@@ -218,28 +240,24 @@
         <div class="footer_container">
             <div id="footertext">
                 <img src="images/logo_white.png" alt="footerimage">
-                <p>Ce site a été établi dans le cadre de l'examen de l'épreuve intégrée de Kimberley Quenon - année académique 2022-2023. Photographies libres de droits. Événement et billeterie factices.</p>
+                Ce site a été établi dans le cadre de l’épreuve intégrée de Kimberley Quenon - année académique 2022-2023. Photographies libres de droits. Événement et billetterie factices.
             </div>
             <div id="about">
-                <h1>À propos</h1>
-                <div>
-                    <a href="">À propos du festival</a>
-                </div>
-                <div>
-                    <a href="">Plan de la plaine</a>
-                </div>
-                <div>
-                    <a href="">Commodités</a>
-                </div>
+                    <h4>À propos</h4>
+                    <a href="valeurs.php">À propos du festival</a><br>
+                    <a href="plan.php">Plan de la plaine</a><br>
+                    <a href="commodites.php">Commodités</a>
             </div>
-            <div id="mentions">
-                <h1>Mentions légales</h1>
-                <div>
-                    <a href="">Politique de confidentalité</a>
-                </div>
-                <div>
-                    <a href="">Paramètres des cookies</a>
-                </div>
+            <div id="mentions_legales">
+                    <h4>Mentions légales</h4>
+                    <a href="mentions.php">Politique de confidentialité</a><br>
+                    <a href="reglement.php">Règlement de bienséance</a>
+            </div>
+            <div class="reseaux">
+                <a href="https://www.facebook.com/profile.php?id=100093659651137" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/ArenaB_festival" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/arenab_festival/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UC2znInYsZNWOBv5E1s2rEGQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
     </div>
@@ -278,6 +296,76 @@
                 menuMobile.classList.remove('open-menu')
             })
         })
+
+
+ 
+
+        const divCompte = document.querySelector('#compte')
+
+        const divJour = document.querySelector('#jour')
+        const divHeure = document.querySelector('#heure')
+        const divMin = document.querySelector('#min')
+        const divSec = document.querySelector('#sec')
+
+        //fonction compte
+        const compte = ()=>{
+        var dateActuelle = new Date()
+        var dateEvenement = new Date("July 22 00:00:00 2023")
+        var totalSecondes = (dateEvenement - dateActuelle) / 1000
+
+        // test si le timer est fini
+        if (totalSecondes < 0)
+        {
+        
+            divCompte.innerHTML ="fin"  
+            return ;
+        }
+
+        // calcul des valeurs
+        var jours = Math.floor(totalSecondes / (60 * 60 * 24))
+        var heures = Math.floor((totalSecondes - (jours * 60 * 60 * 24)) / (60 * 60))
+        var minutes = Math.floor((totalSecondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60)
+        var secondes = Math.floor(totalSecondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)))
+
+        
+
+        // affichage
+        divJour.innerHTML = jours
+        divHeure.innerHTML= heures
+        divMin.innerHTML = minutes
+        divSec.innerHTML = secondes
+        
+        var actualisation = setTimeout("compte();", 1000)
+        }
+
+        // lancement de la fonction
+        compte()
+
+        const toTop = document.createElement('div');
+        toTop.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>`;
+        document.body.appendChild(toTop);
+        toTop.classList.add('totop');
+        toTop.style.cssText = "position: fixed; bottom: 5px; right: 1%; cursor: pointer; border-radius: 50% 50%;";
+
+        toTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+        });
+        });
+
+        const onScroll = () => {
+        const scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        toTop.style.display = scroll < 50 ? "none" : "flex";
+        };
+
+        onScroll();
+        window.addEventListener('scroll', onScroll);
+
+
+
+
     </script>    
 </body>
 </html>
