@@ -962,14 +962,13 @@ svg{
 
 
 @media all and (max-width: 1200px){
-    
+    .btn2{
+        width:300px;
+    } 
 }
 
 @media all and (max-width: 1024px){
 
-    .btn2{
-        width:450px;
-    }
 }
 
 
