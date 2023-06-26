@@ -73,7 +73,7 @@
                     </ul>
                 <b>Par l’achat de son billet, le festivalier adhère au règlement du festival et s’engage au bon respect de celui-ci.</p></b>
             </div>
-            <a href="" class=btn>RÉSERVEZ VOTRE BILLET ></a>
+            <div class="btn"><a href="https://www.ticketmaster.be/event/j-i-d-billets/53217?language=fr-be">RÉSERVEZ VOTRE TICKET ></a></div>
         </div>
 
     </div>
